@@ -14,18 +14,18 @@ services:
       REDIS_DSN: redis://redis:6379/
       POSTGRES_HOST: db
       POSTGRES_PORT: 5432
-      POSTGRES_USER: base_fastapi_project
-      POSTGRES_PASSWORD: base_fastapi_project
-      POSTGRES_DB: base_fastapi_project
+      POSTGRES_USER: data_aggregator
+      POSTGRES_PASSWORD: data_aggregator
+      POSTGRES_DB: data_aggregator
     command: uvicorn main:app --host 0.0.0.0 --port 8000
 
   db:
     image: postgres:15.2
     restart: on-failure
     environment:
-      - POSTGRES_USER=base_fastapi_project
-      - POSTGRES_PASSWORD=base_fastapi_project
-      - POSTGRES_DB=base_fastapi_project
+      - POSTGRES_USER=data_aggregator
+      - POSTGRES_PASSWORD=data_aggregator
+      - POSTGRES_DB=data_aggregator
 
   redis:
     image: redis/redis-stack:7.2.0-RC1

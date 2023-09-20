@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "data aggregator"
+version = "0.1.0"
+description = ""
+authors = ["Eldar  <cooperative.entr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+alembic = "^1.12.0"
+inflection = "^0.5.1"
+uvicorn = "^0.23.2"
+pydantic = {version = "2.1.1", extras = ["dotenv"]}
+sqlalchemy = {version = "2.0.15", extras = ["mypy"]}
+asyncpg = "0.27.0"
+greenlet = "2.0.2"
+httpx = "0.24.1"
+redis = "4.6.0"
+passlib = {version = "1.7.4", extras = ["bcrypt"]}
+python-multipart = "^0.0.6"
+loguru = "^0.7.2"
+pydantic-settings = "^2.0.3"
+authlib = "^1.2.1"
+itsdangerous = "^2.1.2"
+pytest = "^7.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.9.1"
+flake8 = "^6.1.0"
+pytest-asyncio = "^0.21.1"
+pytest-factoryboy = "^2.5.1"
+types-redis = "^4.6.0.6"
+bump-pydantic = "^0.7.0"
+types-aiofiles = "^23.2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,6 +1,6 @@
-# Base FastAPI project
+# Data Aggregator
 
-Base FastAPI Project
+Data Aggregator
 
 ![alt text](https://img.shields.io/badge/python-3.11.2-orange)
 

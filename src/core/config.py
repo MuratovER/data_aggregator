@@ -16,9 +16,9 @@ class Settings(BaseSettings):
 
     POSTGRES_HOST: str = "localhost"
     POSTGRES_PORT: int = 5432
-    POSTGRES_USER: str = "base_fastapi_project"
-    POSTGRES_PASSWORD: str = "base_fastapi_project"
-    POSTGRES_DB: str = "base_fastapi_project"
+    POSTGRES_USER: str = "data_aggregator"
+    POSTGRES_PASSWORD: str = "data_aggregator"
+    POSTGRES_DB: str = "data_aggregator"
 
     REDIS_DSN: str = "redis://localhost:6379"
 

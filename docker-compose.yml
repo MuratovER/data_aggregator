@@ -5,15 +5,15 @@ services:
     image: postgres:15.2
     restart: on-failure
     environment:
-      - POSTGRES_USER=base_fastapi_project
-      - POSTGRES_PASSWORD=base_fastapi_project
-      - POSTGRES_DB=base_fastapi_project
+      - POSTGRES_USER=data_aggregator
+      - POSTGRES_PASSWORD=data_aggregator
+      - POSTGRES_DB=data_aggregator
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
     healthcheck:
-      test: pg_isready -U base_fastapi_project -d base_fastapi_project
+      test: pg_isready -U data_aggregator -d data_aggregator
       interval: 30s
       timeout: 3s
       retries: 3
