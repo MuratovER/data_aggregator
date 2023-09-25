@@ -4,12 +4,12 @@ from sqlalchemy import DateTime, Integer, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 
-class IDMixin:
-    """Mixin of implement id."""
+# class IDMixin:
+    # """Mixin of implement id."""
 
-    __abstract__ = True
+    # __abstract__ = True
 
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    # id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
 
 
 class CreatedAtMixin:
